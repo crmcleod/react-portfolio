@@ -109,8 +109,8 @@
     margin: -1vw 0 0 -2vh;
     background-color: rgba(255, 255, 255, 0.274);
 }
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
 .about-info{
-    font-family: 'Bebas Neue';
     width: 50vw;
     color: rgb(16, 43, 85);
     background-color: rgba(255, 255, 255, 0.308);
@@ -119,7 +119,12 @@
     border-radius: 0.5vw;
     top: 4vh;
     padding: 1vw;
-    font-size: 2.3vh;
+    font-size: 1vw;
+
+}
+.about-info p {
+    font-family: 'Oswald' !important;
+    font-size: 1.21vw;
 }
 #sherry{
     width: 12%;
