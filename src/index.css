@@ -30,3 +30,7 @@ h1{
   font-family: 'Bebas Neue';
   filter: drop-shadow(0 0 5px rgb(190, 103, 32));
 }
+#mobile-warning{
+  font-size: 6rem;
+  text-align: center;
+}
