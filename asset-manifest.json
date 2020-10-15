@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.fed85e4c.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.91788c34.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.91788c34.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.8384f35e.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.3cb03420.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.3cb03420.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.213b1880.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.213b1880.js.map",
-    "static/js/2.92bd4873.chunk.js": "/react-portfolio/static/js/2.92bd4873.chunk.js",
-    "static/js/2.92bd4873.chunk.js.map": "/react-portfolio/static/js/2.92bd4873.chunk.js.map",
+    "static/js/2.66140d2e.chunk.js": "/react-portfolio/static/js/2.66140d2e.chunk.js",
+    "static/js/2.66140d2e.chunk.js.map": "/react-portfolio/static/js/2.66140d2e.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "precache-manifest.93eeb90d02ac7ba0814f56fd5f8a87a7.js": "/react-portfolio/precache-manifest.93eeb90d02ac7ba0814f56fd5f8a87a7.js",
+    "precache-manifest.ce523ea84191f134f1d67494bc45da39.js": "/react-portfolio/precache-manifest.ce523ea84191f134f1d67494bc45da39.js",
     "service-worker.js": "/react-portfolio/service-worker.js",
-    "static/css/main.fed85e4c.chunk.css.map": "/react-portfolio/static/css/main.fed85e4c.chunk.css.map",
-    "static/js/2.92bd4873.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.92bd4873.chunk.js.LICENSE.txt",
+    "static/css/main.8384f35e.chunk.css.map": "/react-portfolio/static/css/main.8384f35e.chunk.css.map",
+    "static/js/2.66140d2e.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.66140d2e.chunk.js.LICENSE.txt",
     "static/media/Screenshot 2020-07-29 at 20.48.15.png": "/react-portfolio/static/media/Screenshot 2020-07-29 at 20.48.15.086f72c4.png",
     "static/media/Screenshot 2020-07-29 at 21.10.03.png": "/react-portfolio/static/media/Screenshot 2020-07-29 at 21.10.03.42e05bf5.png",
     "static/media/Screenshot 2020-07-29 at 21.27.44.png": "/react-portfolio/static/media/Screenshot 2020-07-29 at 21.27.44.3ecc2a00.png",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.213b1880.js",
-    "static/js/2.92bd4873.chunk.js",
-    "static/css/main.fed85e4c.chunk.css",
-    "static/js/main.91788c34.chunk.js"
+    "static/js/2.66140d2e.chunk.js",
+    "static/css/main.8384f35e.chunk.css",
+    "static/js/main.3cb03420.chunk.js"
   ]
 }
