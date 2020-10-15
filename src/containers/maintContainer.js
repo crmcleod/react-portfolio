@@ -6,7 +6,7 @@ const MainContainer = () => {
        const [profileActive, setProfileActove] = useState(true)
        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         return(
-            <h1 id="mobile-warning"> Under Construction For Mobile Devices</h1>
+            <h1 id="mobile-warning"> Under Construction <br></br>For Mobile Devices</h1>
         )
        } else {
     return(
