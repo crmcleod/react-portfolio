@@ -1,0 +1,523 @@
+*{
+    font-family: 'Bebas Neue';
+}
+
+@keyframes float {
+
+    0%, 100%{
+        transform: scale(1);
+        box-shadow: 0 10px 14px 1px rgba(0, 0, 0, 0.658);
+
+    }
+    35% { transform: scale(0.997);
+        box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.699);
+
+    }
+}
+@keyframes float2 {
+    0%, 100%{
+        transform: scale(1);
+
+    }
+    35% { transform: scale(0.9);
+    }
+}
+#card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    align-items: stretch;
+    width: 100%;
+  }
+
+.card{
+    animation: float 3s infinite;
+    background-color: rgb(43, 57, 66);
+    background-image: url(profile.JPG);
+    background-repeat: no-repeat;
+    box-shadow: 0 0 14px 1px rgb(75, 70, 70);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 80vw;
+    height:80vh;
+    border-radius: 1vw;
+    margin-left: 10vw;
+    margin-top: 7vh;
+    padding: 1vw;
+    border-style: inset;
+    border-color: rgba(26, 53, 71, 0.863);
+    border-width: 2px;
+}
+.place-holder{
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    z-index: 0;
+    border-radius: 1vw;
+    margin-left: 10vw;
+    margin-top: 7vh;
+    padding: 1vw;
+    width: 80vw;
+    height: 80vh;
+    transform: scale(0.01);
+    filter: blur(10px);
+
+}
+#linkedin, #github{
+    width: 5vw;
+    position: absolute;
+    margin-top: -5vh;
+    transition: ease-in-out 0.2s;
+
+}
+#linkedin{
+    margin-left: 5vw;
+}
+#github{
+    margin-left: 12vw;
+}
+#linkedin:hover, #github:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 5px rgb(173, 107, 31));
+}
+#enter-button{
+    position: absolute;
+    margin-top: -20vh;
+    margin-left: 60vw;
+}
+#enter-button:hover{
+    cursor: url('my_pointer.png'), auto;
+    animation: float2 0.5s infinite;
+}
+.about-me{
+    color:rgb(0, 0, 0);
+    filter: drop-shadow(0 0 6px rgba(37, 83, 31, 0.842));
+    margin-top: 34vh;
+}
+.text-drop{
+    cursor: url('my_pointer.png'), auto;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+    margin: -1vw 0 0 -2vh;
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.about-info{
+    font-family: 'Bebas Neue';
+    width: 50vw;
+    color: rgb(16, 43, 85);
+    background-color: rgba(255, 255, 255, 0.308);
+    position: absolute;
+    margin-left: 25vw;
+    border-radius: 0.5vw;
+    top: 4vh;
+    padding: 1vw;
+    font-size: 2.3vh;
+}
+#sherry{
+    width: 12%;
+    margin-left: 5vw;
+    transform: rotateY(180deg);
+}
+
+#project-grid{
+    columns: 1/11;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    position: absolute;
+    /* top: 40vw; */
+    /* left: 7%; */
+    /* padding: 1vw; */
+}
+#burger-container,
+#burger-container *{
+    box-sizing: border-box;
+}
+#imdb-container,
+#imdb-container {
+    box-sizing: border-box;
+}
+#codebreakers-container,
+#codebreakers-container *{
+    box-sizing: border-box;
+}
+#pace-container,
+#pace-container *{
+    box-sizing: border-box;
+}
+#friendo-container,
+#friendo-container *{
+    box-sizing: border-box;
+}
+#mh-container,
+#mh-container *{
+    box-sizing: border-box;
+}
+#burger-container{
+    position: relative;
+    color: white;
+    display: inline-block;
+    transition: ease 1s;
+    /* overflow: hidden; */
+}
+#imdb-container{
+    position: relative;
+    color: white;
+    display: inline-block;
+    transition: ease 1s;
+}
+#codebreakers-container{
+    position: relative;
+    color: white;
+    display: inline-block;
+    transition: ease 1s;
+}
+#pace-container{
+    position: relative;
+    color: white;
+    display: inline-block;
+    transition: ease 1s;
+}
+#friendo-container{
+    position: relative;
+    color: white;
+    display: inline-block;
+    transition: ease 1s;
+}
+#mh-container{
+    position: relative;
+    color: white;
+    display: inline-block;
+    transition: ease 1s;
+}
+#burger-container #burger-world{
+    display: block;
+}
+#imdb-container #seen-it{
+    display: block;
+}
+#codebreakers-container #codebreakers{
+    display: block;
+}
+#pace-container #pace{
+    display: block;
+}
+#friendo-container #friendo{
+    display: block;
+}
+#mh-container #mh{
+    display: block;
+}
+#burger-container .burger-text{
+    text-align: center;
+    font-size: 2vw;
+    opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    height: 18vw;
+    width: 22.1vw;
+    border-radius: 3%;
+	background: rgba(0, 0, 0, 0.514);
+    color: rgb(255, 255, 255);
+    padding-left: 1.9vw;
+    padding-right: 1.9vw;
+    padding-top: 4vw;
+    padding-bottom: 3vw;
+    margin-top: 10vh;
+    margin-left: 3vw;
+
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+#imdb-container .imdb-text{
+    text-align: center;
+    font-size: 2vw;
+    opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    height: 9vw;
+    width: 22.1vw;
+    margin-left: 17vw;
+    margin-top: 10vh;
+    border-radius: 3%;
+	background: rgba(0, 0, 0, 0.534);
+    color: rgb(255, 255, 255);
+    padding-left: 1.9vw;
+    padding-right: 1.9vw;
+    padding-top: 4vw;
+    padding-bottom: 5vw;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+#codebreakers-container .codebreakers-text{
+    text-align: center;
+    font-size: 2vw;
+    opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    height: 18vw;
+    width: 23.4vw;
+    margin-left: 36vw;
+    margin-top: 10vh;
+    border-radius: 3%;
+	background: rgba(0, 0, 0, 0.527);
+    color: rgb(255, 255, 255);
+    padding-left: 1.9vw;
+    padding-right: 1.9vw;
+    padding-top: 4vw;
+    padding-bottom: 3vw;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+#pace-container .pace-text{
+    text-align: center;
+    font-size: 2vw;
+    opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    height: 18vw;
+    width: 25.15vw;
+    margin-left: 51vw;
+    margin-top: 10vh;
+    border-radius: 3%;
+	background: rgba(0, 0, 0, 0.541);
+    color: rgb(255, 255, 255);
+    padding-left: 1.9vw;
+    padding-right: 1.9vw;
+    padding-top: 4vw;
+    padding-bottom: 3vw;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+#friendo-container .friendo-text{
+    text-align: center;
+    font-size: 2vw;
+    opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    height: 18vw;
+    width: 30.25vw;
+    margin-left: 14vw;
+    margin-top: 35vh;
+    border-radius: 1vw;
+	background: rgba(0, 0, 0, 0.514);
+    color: rgb(255, 255, 255);
+    padding-left: 1.9vw;
+    padding-right: 1.9vw;
+    padding-top: 4vw;
+    padding-bottom: 3vw;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+#mh-container .mh-text{
+    text-align: center;
+    font-size: 2vw;
+    opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    height: 18vw;
+    width: 24vw;
+    margin-left: 40vw;
+    margin-top: 35vh;
+    border-radius: 1vw;
+	background: rgba(255, 255, 255, 0.685);
+    color: rgb(0, 0, 0);
+    padding-left: 1.9vw;
+    padding-right: 1.9vw;
+    padding-top: 4vw;
+    padding-bottom: 3vw;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+p{
+    font-size: 1.3vw;
+}
+#burger-container:hover .burger-text,
+#burger-container.active .burger-text{
+    opacity: 1;
+}
+#imdb-container:hover .imdb-text,
+#imdb-container.active .imdb-text{
+    opacity: 1;
+}
+#codebreakers-container:hover .codebreakers-text,
+#codebreakers-container.active .codebreakers-text{
+    opacity:1;
+}
+#pace-container:hover .pace-text,
+#pace-container.active .pace-text{
+    opacity: 1;
+}
+#friendo-container:hover .friendo-text,
+#friendo-container.active .friendo-text{
+    opacity: 1;
+}
+#mh-container:hover .mh-text,
+#mh-container.activer .mh-text{
+    opacity: 1;
+}
+#burger-world{
+    position: absolute;
+    margin-left: 3vw;
+    margin-top: 10vh;
+    height: 18vw;
+    border-radius: 3%;
+    box-shadow: -9px 13px 32px -6px rgb(33, 7, 59);
+    transition: all 1s ease;
+    
+
+}
+#seen-it{
+    position: absolute;
+    height: 18vw;
+    border-radius: 3%;
+    margin-left: 17vw;
+    margin-top: 10vh;
+    box-shadow: -9px 13px 32px -6px rgb(33, 7, 59);
+    transition: all 1s ease;
+
+}
+#codebreakers{
+    position: absolute;
+    height: 18vw;
+    margin-left: 36vw;
+    margin-top: 10vh;
+
+    /* columns: 3/4; */
+    border-radius: 3%;
+    box-shadow: -9px 13px 32px -6px rgb(33, 7, 59);
+    transition: all 1s ease;
+}
+#pace{
+    position: absolute;
+    height: 18vw;
+    margin-left: 51vw;
+    margin-top: 10vh;
+    border-radius: 3%;
+    box-shadow: -9px 13px 32px -6px rgb(33, 7, 59);
+    transition: all 1s ease;
+}
+#friendo{
+    position: absolute;
+    height: 18vw;
+
+    margin-top: 35vh;
+    margin-left: 14vw;
+    border-radius: 1vw;
+    box-shadow: -9px 13px 32px -6px rgb(33, 7, 59);
+    transition: all 1s ease;
+    background-color: rgb(194, 200, 228);
+}
+#mh{
+    position: absolute;
+    height: 18vw;
+    margin-right: -5vw;
+    margin-top: 35vh;
+    margin-left: 40vw;
+    border-radius: 1.01vw;
+    box-shadow: -9px 13px 32px -6px rgb(33, 7, 59);
+    transition: all 1s ease;
+    color: white;
+}
+#burger-container:hover{
+    transition: 0.5s;
+    transform: rotate(-3deg) scale(1.1);
+    margin-left: 1vw;
+    margin-right: 4vw;
+    z-index: 3;
+    
+}
+#imdb-container:hover{
+    transition: 0.5s;
+    transform: rotate(-3deg) scale(1.1);
+    /* margin-left: 4vw; */
+    margin-right: 4vw;
+    z-index: 3;
+}
+#codebreakers-container:hover{
+    transition: 0.5s;
+    transform: rotate(1deg) scale(1.1) translate(-5vw);
+    margin-left: 1.4vw;
+    /* margin-right: 0.11vw; */
+    z-index: 3;
+
+}
+#pace-container:hover{
+    transition: 1s;
+    transform: rotate(-3deg) scale(1.1) translate(-10vw);
+    /* margin-left: -1vw; */
+    
+     /* margin-right: -20vw; */
+     /* z-index:1; */
+}
+#friendo-container:hover{
+    transition: 0.5s;
+    transform: rotate(-3deg) scale(1.1) translateY(-1vw);
+    margin-right: 1vw;
+    margin-left: 1vw;
+    z-index: 3;
+}
+
+#mh-container:hover{
+        transition: 0.5s;
+        transform: rotate(2deg) scale(1.1) translateY(-3vw);
+        margin-left: 2vw;
+        z-index: 3;
+}
+
+#projects-header{
+    position: absolute;
+    font-size: 12vw;
+    letter-spacing: 1.5vw;
+    z-index: 2;
+    margin-left: 15vw;
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(0 0 10px rgb(165, 145, 184));
+    margin-top: 27vh;
+}
+#projexit{
+    position: absolute;
+    width: 15vw;
+    margin-left: 68vw;
+    margin-top: 64vh;
+}
+#projexit:hover{
+    cursor: url('my_pointer.png'), auto;
+    animation: float2 0.5s infinite;
+}

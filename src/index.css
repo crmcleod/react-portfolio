@@ -5,9 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
+html{
+  background-position: absolute;
+  background: linear-gradient(299deg, rgb(16, 32, 43) 0%, rgba(75, 102, 109, 0.521) 100%);
+  background-repeat: no-repeat;
+  height: 100%;
+  
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
+h1{
+  color: rgb(26, 13, 73);
+  margin-top: 28vh;
+  margin-left: 4vw;
+  font-size: 10vh;
+  font-family: 'Bebas Neue';
+  filter: drop-shadow(0 0 5px rgb(190, 103, 32));
 }
