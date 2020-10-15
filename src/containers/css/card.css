@@ -85,6 +85,7 @@
     filter: drop-shadow(0 0 5px rgb(173, 107, 31));
 }
 #enter-button{
+    font-size: 5vw;
     position: absolute;
     margin-top: -20vh;
     margin-left: 60vw;
@@ -127,11 +128,10 @@
 }
 
 #project-grid{
-    columns: 1/11;
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr; */
     position: absolute;
-    /* top: 40vw; */
+    top: -2vh;
     /* left: 7%; */
     /* padding: 1vw; */
 }
