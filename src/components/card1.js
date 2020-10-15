@@ -14,7 +14,7 @@ const Card1 = ({startTransitionChain}) => {
                     <h2>
                         Work:
                     </h2>
-                        <p>20010-2020: PureMalt Products | Laboratory Supervisor/Analyst</p>
+                        <p>2010-2020: PureMalt Products | Laboratory Supervisor/Analyst</p>
                     <h2>
                         About me:
                     </h2>
