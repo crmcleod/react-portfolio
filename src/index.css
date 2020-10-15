@@ -31,6 +31,9 @@ h1{
   filter: drop-shadow(0 0 5px rgb(190, 103, 32));
 }
 #mobile-warning{
-  font-size: 6rem;
-  text-align: center;
+  position: absolute;
+  font-size: 2em;
+  /* text-align: center; */
+  filter: none;
+  word-wrap: normal;
 }
