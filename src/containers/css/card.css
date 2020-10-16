@@ -521,7 +521,8 @@ p{
 #projexit{
     position: absolute;
     width: 15vw;
-    margin-left: 68vw;
+    font-size: 5vw;
+    margin-left: 66vw;
     margin-top: 64vh;
 }
 #projexit:hover{
