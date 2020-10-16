@@ -38,7 +38,7 @@
     background-repeat: no-repeat;
     box-shadow: 0 0 14px 1px rgb(75, 70, 70);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     color: white;
     width: 80vw;
     height:80vh;
@@ -50,6 +50,36 @@
     border-color: rgba(26, 53, 71, 0.863);
     border-width: 2px;
 }
+@media screen and (max-width:800px) {
+.card h1{
+    font-size: 2.4em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 12vw;
+    margin-top: 40vh;
+}
+#enter-button{
+    font-size: 2.2em !important;
+    position: relative;
+    bottom: 5vh;
+    left: -30vw;
+}
+#social-wrapper{
+   margin-left: 24vw;
+}
+    #linkedin, #github{
+    width: 10vw !important;
+    position: absolute;
+    margin-left: 15vw !important;
+    margin-top: -5vh;
+    transition: ease-in-out 0.2s;
+
+}
+#linkedin{
+    margin-left: 0vw !important;
+}}
 .place-holder{
     position: fixed;
     background-repeat: no-repeat;
@@ -98,19 +128,24 @@
     color:rgb(0, 0, 0);
     filter: drop-shadow(0 0 6px rgba(37, 83, 31, 0.842));
     margin-top: 34vh;
+    max-width: 20vw;
 }
 .text-drop{
     cursor: url('my_pointer.png'), auto;
+    display: inline-block;
     position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 1vw;
-    margin: -1vw 0 0 -2vh;
+    margin-left: -1.1vw;
+    margin-top: -1.1vw;
+
     background-color: rgba(255, 255, 255, 0.274);
 }
 @import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
 .about-info{
     width: 50vw;
+    height: 80%;
     color: rgb(255, 255, 255);
     background-color: rgba(7, 1, 1, 0.356);
     position: absolute;
@@ -120,6 +155,7 @@
     padding: 1vw;
     font-size: 1vw;
     text-align: justify;
+    overflow: scroll;
 }
 .about-info p {
     font-family: 'Oswald' !important;
@@ -129,18 +165,123 @@
     color: rgb(26, 33, 43);
 }
 #sherry{
-    width: 12%;
+    height: 20vh;
     margin-left: 5vw;
     transform: rotateY(180deg);
 }
+@media screen and (max-width:800px) {
+.about-me{
+    position: fixed;
+    margin-top: 5vw !important;
+    margin-left: 36% !important;
+    max-width: none ;
+}
+#sherry{
+    position: fixed;
+    bottom: 0;
+}
+.about-info{
+    width: 70vw;
+    height: 80%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(7, 1, 1, 0.356);
+    position: absolute;
+    margin-left: 7% !important;
+    border-radius: 0.5vw;
+    top: 10vh;
+    padding: 1vw;
+    font-size: 1vw;
+    text-align: center;
+    overflow: scroll;
+}
+.about-info p {
+    font-family: 'Oswald' !important;
+    font-size: 1.4vh;
+}
+.about-info h2{
+    font-size: 2vh;
+    color: rgb(26, 33, 43);
+}
+
+}
 
 #project-grid{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     position: absolute;
     top: -2vh;
-    /* left: 7%; */
-    /* padding: 1vw; */
+}
+@media screen and (max-height:500px) {
+    #project-grid {
+        position: fixed !important;
+        display: flex !important;
+        top: 27vh !important;
+        margin-left: 8vw !important;
+        width: 80% !important;
+    }
+    #burger-world, #pace, #mh, #seen-it, #codebreakers, #friendo{
+        position: unset !important;
+        overflow: hidden !important;
+        flex-direction: row !important;
+        margin: -3vw !important;
+        height: 12vw !important;
+    }
+    .burger-text p, .imdb-text p, .codebreakers-text p, .pace-text p, .friendo-text p, .mh-text p{
+        font-size: 3vh !important;
+        margin-top: -2vh !important;
+    }
+    #burger-container .burger-text{
+        margin-left: -3vw !important;
+        margin-top: -3vw !important;
+        height: 12vw !important;
+        width: 14.8vw !important;
+    }
+    #codebreakers-container .codebreakers-text{
+        margin-left: -3vw !important;
+        margin-top: -3vw !important;
+        height: 12vw !important;
+        width: 15.6vw !important;
+    }
+    #imdb-container .imdb-text{
+        margin-left: -3vw !important;
+        margin-top: -3vw !important;
+        height: 3vw !important;
+        width: 13.5vw !important;
+    }
+    #pace-container .pace-text{
+        margin-left: -3vw !important;
+        margin-top: -3vw !important;
+        height: 12vw !important;
+        width: 16.8vw !important;
+    }
+    #friendo-container .friendo-text{
+        margin-left: -3vw !important;
+        margin-top: -3vw !important;
+        height: 12vw !important;
+        width: 20.2vw !important;
+    }
+    #mh-container .mh-text{
+        margin-left: -3vw !important;
+        margin-top: -3vw !important;
+        height: 12vw !important;
+        width: 16vw !important;
+    }
+    #projects-header{
+        position: absolute !important;
+        margin-top: -1.3vw !important;
+        margin-left: 12vw !important;
+        font-size: 7vw !important;
+        background-color: rgba(255, 255, 255, 0.335);
+        padding-left: 1vw;
+        padding-right: 1vw;
+        border-radius: 1vw;
+    }
+    #projects-header:hover{
+        z-index: -1 !important;
+    }
+    #projexit{
+        position: absolute !important;
+        margin-left: 60vw !important;
+        margin-top: 38vh !important;
+    }
 }
 #burger-container,
 #burger-container *{
@@ -443,7 +584,6 @@ p{
 #friendo{
     position: absolute;
     height: 18vw;
-
     margin-top: 35vh;
     margin-left: 14vw;
     border-radius: 1vw;
@@ -481,17 +621,13 @@ p{
     transition: 0.5s;
     transform: rotate(1deg) scale(1.1) translate(-5vw);
     margin-left: 1.4vw;
-    /* margin-right: 0.11vw; */
     z-index: 3;
 
 }
 #pace-container:hover{
     transition: 1s;
     transform: rotate(-3deg) scale(1.1) translate(-10vw);
-    /* margin-left: -1vw; */
-    
-     /* margin-right: -20vw; */
-     /* z-index:1; */
+     z-index:3;
 }
 #friendo-container:hover{
     transition: 0.5s;
