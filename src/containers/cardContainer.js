@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './css/card.css'
 import cap from './css/capilano.JPG'
-import prof from './css/profile.JPG'
+import prof from './css/profile1.jpg'
 import Card1 from '../components/card1'
 import Card2 from '../components/card2'
 

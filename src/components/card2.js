@@ -4,7 +4,7 @@ const Card2 = ({startTransitionChain}) => {
     return(
         <div id="project-grid">
             <a id="burger-container" href="https://condescending-kare-bb7195.netlify.app/" target="_blank">
-                <img id="burger-world" src={require("../containers/css/Screenshot 2020-07-29 at 20.48.15.png")}/>
+                <img id="burger-world" src={require("../containers/css/Screenshot 2020-07-29 at 20.48.15.jpg")}/>
                 <div class ="burger-text">
                     Burger World: 
                     <br/>

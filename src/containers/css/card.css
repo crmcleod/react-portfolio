@@ -34,7 +34,7 @@
 .card{
     animation: float 3s infinite;
     background-color: rgb(43, 57, 66);
-    background-image: url(profile.JPG);
+    background-image: url(profile1.jpg);
     background-repeat: no-repeat;
     box-shadow: 0 0 14px 1px rgb(75, 70, 70);
     background-size: cover;
@@ -101,7 +101,6 @@
 }
 .text-drop{
     cursor: url('my_pointer.png'), auto;
-
     position: absolute;
     height: 100%;
     width: 100%;
@@ -112,19 +111,22 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
 .about-info{
     width: 50vw;
-    color: rgb(16, 43, 85);
-    background-color: rgba(255, 255, 255, 0.308);
+    color: rgb(255, 255, 255);
+    background-color: rgba(7, 1, 1, 0.356);
     position: absolute;
     margin-left: 25vw;
     border-radius: 0.5vw;
     top: 4vh;
     padding: 1vw;
     font-size: 1vw;
-
+    text-align: justify;
 }
 .about-info p {
     font-family: 'Oswald' !important;
     font-size: 1.21vw;
+}
+.about-info h2{
+    color: rgb(26, 33, 43);
 }
 #sherry{
     width: 12%;
