@@ -339,12 +339,15 @@ html{
         width: 16vw !important;
     }
     #projects-header{
+        width: 100% !important;
+        text-align: center;
         position: absolute !important;
         margin-top: -1.3vw !important;
-        margin-left: 12vw !important;
         font-size: 7vw !important;
         background-color: rgba(255, 255, 255, 0.335);
         padding-left: 1vw;
+        margin-left: auto;
+        margin-right: auto;
         padding-right: 1vw;
         border-radius: 1vw;
     }
