@@ -87,16 +87,18 @@ const CardContainer = ({profileActive}) => {
             <>
                 <div id="card-container">
                     <div className="card" >
-                        <h1> Craig McLeod <br></br> Software Developer </h1>
-                    <h1 id="enter-button" onClick={startTransitionChain}>[ ENTER ]</h1>
-                        <div id="social-wrapper">
-                            <a href="https://www.linkedin.com/in/craig-r-mcleod/" target="_blank">
-                                <img alt="linkedin" id="linkedin" src={require('./css/linkedin1.svg')}/>
-                            </a>
-                            <a href="https://github.com/crmcleod" target="_blank">
-                                <img alt="github" id="github" src={require('./css/logo.svg')}/>
-                            </a>
-                        </div>
+                        <div className="homepage-items">"
+                            <h1 id="name"> Craig McLeod <br></br> Software Developer </h1>
+                            <h1 id="enter-button" onClick={startTransitionChain}>[ ENTER ]</h1>
+                                <div id="social-wrapper">
+                                    <a href="https://www.linkedin.com/in/craig-r-mcleod/" target="_blank" id="linkedin" >
+                                        <img alt="linkedin" src={require('./css/linkedin1.svg')}/>
+                                    </a>
+                                    <a href="https://github.com/crmcleod" target="_blank" id="github">
+                                        <img alt="github"  src={require('./css/logo.svg')}/>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     <div className="place-holder"></div>
                 </div>

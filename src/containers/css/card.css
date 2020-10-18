@@ -1,6 +1,9 @@
 *{
     font-family: 'Bebas Neue';
 }
+html{
+    background-size: cover;
+}
 
 @keyframes float {
 
@@ -22,13 +25,13 @@
     35% { transform: scale(0.9);
     }
 }
+
 #card-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  
-    align-items: stretch;
-    width: 100%;
+    width: 90vw;
+    height:80vh;
+    margin-right: auto;
+
   }
 
 .card{
@@ -40,8 +43,8 @@
     background-size: cover;
     background-position: right;
     color: white;
-    width: 80vw;
-    height:80vh;
+    width: 100%;
+    height: 100%;
     border-radius: 1vw;
     margin-left: 10vw;
     margin-top: 7vh;
@@ -49,37 +52,106 @@
     border-style: inset;
     border-color: rgba(26, 53, 71, 0.863);
     border-width: 2px;
-}
-@media screen and (max-width:800px) {
-.card h1{
-    font-size: 2.4em;
-    padding-bottom: 1em;
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    margin-left: 12vw;
-    margin-top: 40vh;
+    min-width: 300px;
 }
-#enter-button{
-    font-size: 2.2em !important;
-    position: relative;
-    bottom: 5vh;
-    left: -30vw;
+.card h1{
+    max-width: 50%;
+    font-size: 3rem;
 }
-#social-wrapper{
-   margin-left: 24vw;
-}
-    #linkedin, #github{
-    width: 10vw !important;
-    position: absolute;
-    margin-left: 15vw !important;
-    margin-top: -5vh;
-    transition: ease-in-out 0.2s;
 
+/* mobile fit */
+@media screen and (max-width:800px) {
+    .card{
+        position: unset !important;
+        background-position: 80%;
+        min-width: 80vw !important;
+        max-width: 80vw !important;
+        
+    }
+    #card-container{
+        width: 80vw !important;
+        margin: 0;
+    }
+
+    .homepage-items{
+        position: absolute !important;
+        display: flex !important;
+        width: 85% !important;
+        height: 30% !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        margin-top: 20vh;
+
+    }
+    .homepage-items > h1{
+        width: 100% !important;
+        font-size: xx-large !important;
+        text-align: center;
+        margin: auto !important;
+        padding: 0 !important;
+    }
+    #social-wrapper{
+        width: 100% !important;
+        display: flex;
+        justify-content: space-around;
+    }
+    #linkedin, #github{
+        margin: 0px !important;
+        width: 8vw !important;
+        position: unset !important;
+    }
+    #enter-button{
+        width: 100%;
+        position: unset !important;
+        padding: 5vh 0 5vh 0 !important;
+    }
+    .about-me{
+        font-size: 3rem;
+        max-width: 100% !important;
+        /* width: 100% !important; */
+        /* text-align: center !important; */
+        display: flex;
+        margin:  5% 0 0 50% !important;
+        transform: translate(-25%) !important;
+    }
+    .text-drop{
+        width: 100%;
+        align-content: center !important;
+    }
+    .about-info{
+        flex-direction: column !important;
+        width: 80% !important;
+        height: 65% !important;
+        position: unset !important;
+        margin: auto !important;
+    }
+    .about-info > p{
+        font-size: medium !important;
+    }
+    #sherry{
+        height: 20%;
+    }
+    
 }
-#linkedin{
-    margin-left: 0vw !important;
-}}
+@media screen and (max-height:400px) {
+    .homepage-items{
+        position: absolute;
+        top: -14vh;
+    }
+    .homepage-items h1 {
+        line-height: 50px;
+        margin-bottom: -5vw !important;
+    }
+    .homepage-items img {
+        height: 15vw !important;
+    }
+    #enter-button{
+        margin-top: 10vh !important; 
+    }
+}
+
 .place-holder{
     position: fixed;
     background-repeat: no-repeat;
@@ -97,28 +169,49 @@
     filter: blur(10px);
 
 }
-#linkedin, #github{
-    width: 5vw;
-    position: absolute;
-    margin-top: -5vh;
-    transition: ease-in-out 0.2s;
-
-}
-#linkedin{
-    margin-left: 5vw;
-}
-#github{
-    margin-left: 12vw;
+#github img, #linkedin img{
+    width: 100%;
 }
 #linkedin:hover, #github:hover{
     transform: scale(1.05);
     filter: drop-shadow(0 0 5px rgb(173, 107, 31));
 }
+#social-wrapper{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    float: left;
+
+}
+#linkedin, #github{
+    padding-bottom: 2vw;
+    padding-top: auto;
+    padding-right: 2vw;
+    /* margin-top: -3vw; */
+    width: 5vw;
+    position: unset !important;
+}
+.homepage-items{
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    margin-left: 5vw;
+    align-content: center;
+}
+.homepage-items > h1 {
+    margin: 0px;
+    padding: 0px;
+}
+#name{
+    float: left;
+    margin-top: 30vh;
+}
 #enter-button{
-    font-size: 5vw;
+    font-size: 4rem;
     position: absolute;
-    margin-top: -20vh;
-    margin-left: 60vw;
+    padding: 3vw;
+    right: 5vw;
+    bottom: 0;
 }
 #enter-button:hover{
     cursor: url('my_pointer.png'), auto;
@@ -128,6 +221,7 @@
     color:rgb(0, 0, 0);
     filter: drop-shadow(0 0 6px rgba(37, 83, 31, 0.842));
     margin-top: 34vh;
+    margin-left: 6vw;
     max-width: 20vw;
 }
 .text-drop{
@@ -144,8 +238,8 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
 .about-info{
-    width: 50vw;
-    height: 80%;
+    width: 62%;
+    height: 87%;
     color: rgb(255, 255, 255);
     background-color: rgba(7, 1, 1, 0.356);
     position: absolute;
@@ -153,68 +247,48 @@
     border-radius: 0.5vw;
     top: 4vh;
     padding: 1vw;
-    font-size: 1vw;
-    text-align: justify;
+    /* font-size: x-large; */
+    text-align: left;
     overflow: scroll;
 }
 .about-info p {
     font-family: 'Oswald' !important;
-    font-size: 1.21vw;
+    font-size: 1.5rem;
 }
 .about-info h2{
+    font-size: xx-large;
     color: rgb(26, 33, 43);
+    line-height: 0;
 }
 #sherry{
-    height: 20vh;
+    min-height: 2vw;
+    max-height: 23vh;
     margin-left: 5vw;
     transform: rotateY(180deg);
 }
-@media screen and (max-width:800px) {
-.about-me{
-    position: fixed;
-    margin-top: 5vw !important;
-    margin-left: 36% !important;
-    max-width: none ;
-}
-#sherry{
-    position: fixed;
-    bottom: 0;
-}
-.about-info{
-    width: 70vw;
-    height: 80%;
-    color: rgb(255, 255, 255);
-    background-color: rgba(7, 1, 1, 0.356);
-    position: absolute;
-    margin-left: 7% !important;
-    border-radius: 0.5vw;
-    top: 10vh;
-    padding: 1vw;
-    font-size: 1vw;
-    text-align: center;
-    overflow: scroll;
-}
-.about-info p {
-    font-family: 'Oswald' !important;
-    font-size: 1.4vh;
-}
-.about-info h2{
-    font-size: 2vh;
-    color: rgb(26, 33, 43);
-}
-
-}
-
 #project-grid{
     position: absolute;
     top: -2vh;
 }
-@media screen and (max-height:500px) {
+@media screen and (max-height:620px) {
+
+    .card{
+        min-width: 80vw !important;
+        max-width: 80vw !important;
+    }
+
+    .homepage-items > h1 {
+        font-size: 3vw !important;
+        line-height: normal;
+
+    }
+
     #project-grid {
         position: fixed !important;
         display: flex !important;
         top: 27vh !important;
         margin-left: 8vw !important;
+        margin-right: 8vw !important;
         width: 80% !important;
     }
     #burger-world, #pace, #mh, #seen-it, #codebreakers, #friendo{
@@ -222,7 +296,7 @@
         overflow: hidden !important;
         flex-direction: row !important;
         margin: -3vw !important;
-        height: 12vw !important;
+        height: 11.4vw !important;
     }
     .burger-text p, .imdb-text p, .codebreakers-text p, .pace-text p, .friendo-text p, .mh-text p{
         font-size: 3vh !important;
@@ -279,7 +353,7 @@
     }
     #projexit{
         position: absolute !important;
-        margin-left: 60vw !important;
+        margin-left: 57vw !important;
         margin-top: 38vh !important;
     }
 }
@@ -654,11 +728,14 @@ p{
     filter: drop-shadow(0 0 10px rgb(165, 145, 184));
     margin-top: 27vh;
 }
+#projects-header:hover{
+    z-index: -1;}
+
 #projexit{
-    position: absolute;
+    /* position: absolute; */
     width: 15vw;
     font-size: 5vw;
-    margin-left: 66vw;
+    margin-left: 60vw;
     margin-top: 64vh;
 }
 #projexit:hover{

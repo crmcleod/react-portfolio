@@ -33,7 +33,7 @@ const Card1 = ({startTransitionChain}) => {
                             
                         </p>
                 </div>
-                <img id="sherry" alt="sherry" src={require('../containers/css/Sherry.png')} />
+            <img id="sherry" alt="sherry" src={require('../containers/css/Sherry.png')} />
         </div>
     )
 }
