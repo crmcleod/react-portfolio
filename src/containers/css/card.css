@@ -331,11 +331,60 @@ html{
         transform: translateY(-1vw) translateX(0) !important;
         margin: 0 !important;
     }
+    .burger-text p, .imdb-text p, .codebreakers-text p, .pace-text p, .friendo-text p, .mh-text p{
+        font-size: 2vh !important;
+    }
+    .burger-text, .imdb-text, .codebreakers-text, .pace-text, .friendo-text, .mh-text{
+        font-size: 4vh !important;
+        /* padding-top: -6vh !important; */
+    }
+    #burger-container .burger-text{
+        margin-left: 0vw !important;
+        margin-top: 8vh !important;
+        height: 50vw !important;
+        width: 60vw !important;
+        z-index: 10;
+    }
+    #codebreakers-container .codebreakers-text{
+        margin-left: 0vw !important;
+        margin-top: 24vh !important;
+        height: 45vw !important;
+        width: 60vw !important;
+        z-index: 10;
+    }
+    #imdb-container .imdb-text{
+        margin-left: 0vw !important;
+        margin-top: 18vh !important;
+        height: 35vw !important;
+        width: 56.4vw !important;
+        z-index: 10;
+    }
+    #pace-container .pace-text{
+        margin-left: 0vw !important;
+        margin-top: 30vh !important;
+        height: 45vw !important;
+        width: 60vw !important;
+        z-index: 10;
+    }
+    #friendo-container .friendo-text{
+        margin-left: 0vw !important;
+        margin-top: 43vh !important;
+        height: 43vw !important;
+        width: 60vw !important;
+        z-index: 10 !important;
+    }
+    #mh-container .mh-text{
+        margin-left: 0vw !important;
+        margin-top: 45vh !important;
+        height: 45vw !important;
+        width: 60vw !important;
+        z-index: 10;
+    }
     #projects-header{
         position: absolute !important;
         margin-top: 18vw !important;
-        margin-left: 10vw !important;
-        z-index: 10 !important;
+        margin-left: 8.6vw !important;
+        z-index: 7 !important;
         filter: drop-shadow(1px 1px 3px white) !important;
     }
     #projexit{
