@@ -87,7 +87,7 @@ const CardContainer = ({profileActive}) => {
             <>
                 <div id="card-container">
                     <div className="card" >
-                        <div className="homepage-items">"
+                        <div className="homepage-items">
                             <h1 id="name"> Craig McLeod <br></br> Software Developer </h1>
                             <h1 id="enter-button" onClick={startTransitionChain}>[ ENTER ]</h1>
                                 <div id="social-wrapper">

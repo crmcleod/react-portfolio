@@ -8,12 +8,12 @@ html{
 @keyframes float {
 
     0%, 100%{
-        transform: scale(1);
-        box-shadow: 0 10px 14px 1px rgba(0, 0, 0, 0.658);
+        transform: scale(0.99);
+        box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.603);
 
     }
-    35% { transform: scale(0.997);
-        box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.699);
+    35% { transform: scale(1.01);
+        box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.699);
 
     }
 }
@@ -35,7 +35,7 @@ html{
   }
 
 .card{
-    animation: float 3s infinite;
+    animation: float 2s infinite;
     background-color: rgb(43, 57, 66);
     background-image: url(profile1.jpg);
     background-repeat: no-repeat;
@@ -267,7 +267,85 @@ html{
     position: absolute;
     top: -2vh;
 }
-@media screen and (max-height:620px) {
+@media (max-width:800px){
+    .card{
+        min-height: 500px !important;
+    }
+    #project-grid {
+        position: fixed !important;
+        display: flex !important;
+        margin-top: -5vw;
+        margin-left: 11vw !important;
+        margin-right: 8vw !important;
+        height: 80% !important;
+        width: 80% !important;
+    }
+    
+    #burger-world, #pace, #mh, #seen-it, #codebreakers, #friendo{
+        position: absolute !important;
+        justify-content: space-between !important;
+        margin: 0 !important;
+        margin-top: 20vw !important;
+        overflow: hidden !important;
+        flex-direction: column !important;
+        height: 50vw !important;
+    } 
+    #burger-world{
+        margin-top: 8vh !important;
+        width: 60vw;
+        z-index: 6;
+    }
+    #pace{
+        margin-top: 30vh !important;
+        width: 60vw;
+        height: 45vw !important;
+        z-index: 3;
+    }
+    #seen-it{
+        margin-top: 18vh !important;
+        width: 60vw;
+        height: 44vw !important;
+        z-index: 5;
+    }
+    #codebreakers{
+        margin-top: 24vh !important;
+        width: 60vw;
+        height: 45vw !important;
+        z-index: 4;
+    }
+    #mh{
+        margin-top: 45vh !important;
+        transform-origin: -50% -50% !important;
+        width: 60vw;
+        height: 45vw !important;
+        z-index: 1;
+    }
+    #friendo{
+        margin-top: 43vh !important;
+        width: 60vw;
+        height: 38vw !important;
+        z-index: 2;
+    }
+    #burger-container:hover, #pace-container:hover, #mh-container:hover, #imdb-container:hover, #codebreakers-container:hover, #friendo-container:hover {
+        z-index: 10 !important;
+        transform: translateY(-1vw) translateX(0) !important;
+        margin: 0 !important;
+    }
+    #projects-header{
+        position: absolute !important;
+        margin-top: 18vw !important;
+        margin-left: 10vw !important;
+        z-index: 10 !important;
+        filter: drop-shadow(1px 1px 3px white) !important;
+    }
+    #projexit{
+        margin-top: 80vh !important;
+        margin-right: -10vw !important;
+        margin-left: 58vw !important;
+        z-index: 10;
+    }
+}
+@media screen and (max-height:620px) and (min-width: 800px) {
 
     .card{
         min-width: 80vw !important;
@@ -744,4 +822,43 @@ p{
 #projexit:hover{
     cursor: url('my_pointer.png'), auto;
     animation: float2 0.5s infinite;
+}
+
+
+
+.videos{
+    background-repeat: repeat;
+    margin-left: 3.4vw;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@keyframes blob {
+    0%, 100%{
+        border-radius: 30vh;
+        transform: scale(1.04);
+    }
+    50%{
+        border-radius: 0%;
+        transform: scale(1);
+    }
+}
+iframe{
+    animation: blob 3s infinite;
+    align-items: unset;
+    padding: 0;
+    margin: 0;
+    width: 28vw;
+    height: 30vh;
+    border-radius: 0.3vw;
+    margin: 1vw;
+    box-shadow: -3px 3px 10px 1px rgb(18, 52, 56);
+    z-index: 0 !important;
+}
+#table-chocolate, #iframe-text{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    text-align: center;
 }

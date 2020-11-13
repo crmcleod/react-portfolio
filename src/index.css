@@ -12,11 +12,9 @@ html{
   background: linear-gradient(299deg, rgb(16, 32, 43) 0%, rgba(75, 102, 109, 0.521) 100%);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 120%;
   
 }
-
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
