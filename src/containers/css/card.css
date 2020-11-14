@@ -222,7 +222,6 @@ html{
     max-width: 20vw;
 }
 .text-drop{
-    cursor: url('my_pointer.png'), auto;
     display: inline-block;
     position: absolute;
     height: 100%;
@@ -262,6 +261,12 @@ html{
     max-height: 23vh;
     margin-left: 5vw;
     transform: rotateY(180deg);
+    cursor: url('my_pointer.png'), auto;
+
+}
+#sherry:hover{
+    filter:  drop-shadow(0 0 3px orange);
+    transform: scale(1.03) rotateY(180deg);
 }
 #project-grid{
     position: absolute;
@@ -315,7 +320,6 @@ html{
     }
     #mh{
         margin-top: 45vh !important;
-        transform-origin: -50% -50% !important;
         width: 60vw;
         height: 45vw !important;
         z-index: 1;
@@ -326,45 +330,43 @@ html{
         height: 38vw !important;
         z-index: 2;
     }
-    #burger-container:hover, #pace-container:hover, #mh-container:hover, #imdb-container:hover, #codebreakers-container:hover, #friendo-container:hover {
-        z-index: 10 !important;
-        transform: translateY(-1vw) translateX(0) !important;
-        margin: 0 !important;
-    }
+    
     .burger-text p, .imdb-text p, .codebreakers-text p, .pace-text p, .friendo-text p, .mh-text p{
         font-size: 2vh !important;
+        z-index: 10 !important;
     }
     .burger-text, .imdb-text, .codebreakers-text, .pace-text, .friendo-text, .mh-text{
+        padding-top: 11vh !important;
         font-size: 4vh !important;
-        /* padding-top: -6vh !important; */
+        z-index: 10 !important;
     }
     #burger-container .burger-text{
         margin-left: 0vw !important;
         margin-top: 8vh !important;
         height: 50vw !important;
         width: 60vw !important;
-        z-index: 10;
+        z-index: 10 !important;
     }
     #codebreakers-container .codebreakers-text{
         margin-left: 0vw !important;
         margin-top: 24vh !important;
         height: 45vw !important;
         width: 60vw !important;
-        z-index: 10;
+        z-index: 10 !important;
     }
     #imdb-container .imdb-text{
         margin-left: 0vw !important;
         margin-top: 18vh !important;
         height: 35vw !important;
         width: 56.4vw !important;
-        z-index: 10;
+        z-index: 10 !important;
     }
     #pace-container .pace-text{
         margin-left: 0vw !important;
         margin-top: 30vh !important;
         height: 45vw !important;
         width: 60vw !important;
-        z-index: 10;
+        z-index: 10 !important;
     }
     #friendo-container .friendo-text{
         margin-left: 0vw !important;
@@ -378,14 +380,19 @@ html{
         margin-top: 45vh !important;
         height: 45vw !important;
         width: 60vw !important;
-        z-index: 10;
+        z-index: 10 !important;
+    }
+    #burger-container:hover, #pace-container:hover, #mh-container:hover, #imdb-container:hover, #codebreakers-container:hover, #friendo-container:hover {
+        z-index: 10 !important;
+        transform: translateY(-1vw) translateX(0) !important;
+        margin: 0 !important;
     }
     #projects-header{
         position: absolute !important;
         margin-top: 18vw !important;
         margin-left: 8.6vw !important;
         z-index: 7 !important;
-        filter: drop-shadow(1px 1px 3px white) !important;
+        filter: drop-shadow(0 0 3px white) !important;
     }
     #projexit{
         margin-top: 80vh !important;
@@ -874,40 +881,89 @@ p{
 }
 
 
-
+#videography{
+    position: absolute;
+    font-size: 10.5vw;
+    margin-top: 12vh;
+    margin-left: 28vw;
+}
 .videos{
     background-repeat: repeat;
-    margin-left: 3.4vw;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    perspective: 200vw;
+    -webkit-perspective: 200vw;
+    -ms-perspective: 200vw;
+    backface-visibility: hidden;
+    position: relative;
+    filter: drop-shadow(0 0 10px black);
 }
-@keyframes blob {
-    0%, 100%{
-        border-radius: 30vh;
-        transform: scale(1.04);
-    }
-    50%{
-        border-radius: 0%;
-        transform: scale(1);
-    }
-}
-iframe{
-    animation: blob 3s infinite;
-    align-items: unset;
-    padding: 0;
-    margin: 0;
-    width: 28vw;
-    height: 30vh;
-    border-radius: 0.3vw;
-    margin: 1vw;
-    box-shadow: -3px 3px 10px 1px rgb(18, 52, 56);
-    z-index: 0 !important;
-}
-#table-chocolate, #iframe-text{
+#vid-area{
     position: absolute;
-    z-index: 1;
-    color: white;
-    text-align: center;
+    transform-style: preserve-3d;
+    margin-top:  1vh;
+    margin-left: 30vw;
+    transform-origin: 19.5vw;
+    animation: spin1 linear 35s infinite;
+}
+#vid-area:hover{
+    animation-play-state: paused;
+}
+
+iframe{
+    position: absolute;
+    padding: 0;
+    margin: auto;
+    margin-top: 28vh;
+    width: 35vw;
+    height: 20vw;
+    border-radius: 1vw;
+    box-shadow: -3px 3px 15px 10px rgba(7, 68, 70, 0.719);
+}
+@keyframes spin1{
+    0%{
+        -webkit-transform:rotateY(0deg) translateZ(0);
+    }
+
+    100%{
+        transform:rotateY(360deg) translateZ(0);
+
+    }
+}
+
+#table-chocolate{
+    transform:rotateY(360deg) translateZ(35vw);
+
+}
+#table-pasta{
+    transform:rotateY(60deg) translateZ(35vw);
+}
+#table-service{
+    transform:rotateY(120deg) translateZ(35vw);
+}
+#record-day-montage{
+    transform:rotateY(180deg) translateZ(35vw);
+}
+#rsd-scott{
+    transform:rotateY(240deg) translateZ(35vw);
+}
+#grilling-glasgow{
+    transform:rotateY(300deg) translateZ(35vw);
+}
+#vidClick{
+    font-family: "Oswald";
+    color: rgb(194, 116, 116);
+    cursor: url('my_pointer.png'), auto;
+
+}
+#vidClick:hover{
+    color: rgb(175, 90, 59);
+}
+#go-back{
+    position: absolute;
+    bottom: 4vh;
+    left: 48vw;
+    width: 10%;
+    cursor: pointer;
+    font-size: xx-large;
+    cursor: url('my_pointer.png'), auto;
+
 }

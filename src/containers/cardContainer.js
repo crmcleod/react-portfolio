@@ -5,7 +5,7 @@ import prof from './css/profile1.jpg'
 import Card1 from '../components/card1'
 import Card2 from '../components/card2'
 
-const CardContainer = ({profileActive}) => {
+const CardContainer = ({ profileActive, setProfileActive, setVideographyActive }) => {
 
     const [cardPosition, setCardPosition] = useState(1)
 
@@ -73,7 +73,7 @@ const CardContainer = ({profileActive}) => {
 
     }
 
-    function startTransitionChain(){
+    function startTransitionChain(event){
         document.getElementsByClassName('card')[0].style.animation = "none"
         setTimeout(handleClick, 10)
     }
@@ -108,8 +108,8 @@ const CardContainer = ({profileActive}) => {
             return (
                 <>
                 <div id="card-container">
-                    <div className="card" onClick={startTransitionChain}>
-                       <Card1 />
+                    <div className="card" >
+                       <Card1 startTransitionChain={ startTransitionChain } setVideographyActive={ setVideographyActive } setProfileActive={ setProfileActive } />
                     </div>
                     <div className="place-holder"></div>
 

@@ -1,6 +1,11 @@
 import React from 'react'
 
-const Card1 = ({startTransitionChain}) => {
+const Card1 = ({ startTransitionChain, setVideographyActive, setProfileActive }) => {
+
+    const handleFilmClick = () => {
+        setVideographyActive(true)
+        setProfileActive(false)
+    }
     return (
         <div className="text-drop">
             <h1 className="about-me">About me</h1>
@@ -29,11 +34,11 @@ const Card1 = ({startTransitionChain}) => {
                         </h2>
                         <p>
                             Of course not! What really makes my world go round are my wife, and my cat, Sherry. I also play guitar, bass, piano, 
-                            banjo, ukulele and drums, I am a keen gym-goer, I dabble in graphic design, photography and film-making too. 
+                            banjo, ukulele and drums, I am a keen gym-goer, I dabble in graphic design, photography and <span id="vidClick" onClick={handleFilmClick}>film-making too</span>. 
                             
                         </p>
                 </div>
-            <img id="sherry" alt="sherry" src={require('../containers/css/Sherry.png')} />
+            <img id="sherry" alt="sherry" onClick={ startTransitionChain } src={require('../containers/css/Sherry.png')} />
         </div>
     )
 }
